@@ -7,27 +7,71 @@ header {
     padding: .75em;
 }
 
-
 .search-holder {
-    padding-right: 6em;
+    padding-right: 15%;
+}
+
+.city-icon {
+    width: 50px;
+    height: 50px;
 }
 
 .city-history {
-    height: 100%;
-    width: 100%;
+    float: left;
     background: #f8f9fa;
-    padding-bottom: 1.5em;
-    /* background: blue; */
+    width: 20%;
+    height: 100%;
+    padding: .25em .75em 1em .75em;
 }
 
 .city-display {
-    height: 100%;
-    display: flex;
-    /* background: red; */
+    float:left;
+    width: 80%;
+    padding: .8em .8em 0em .8em;
+}
+
+.forecast-holder {
+    float: left;
+    padding-top: .8em;
+    padding-left: .8em;
+    width: 70%;
+}
+
+.city-forecast {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.city-forecast > .city-forecast-day {
+    display: inline-block;
+    zoom: 1;
+    margin-right: 2.5%;
+    width: 150px;
+    text-align: left;
+    color: white;
+}
+
+.card-body > .forecast-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.card-body > .forecast-item {
+    padding-bottom : 6%;
+}
+
+.forecast-body {
+    padding : 8%;
 }
 
 .city-item {
     padding : .5em 0em;
+}
+
+#city-name {
+    padding : 0;
 }
 
 .card-body {
@@ -37,4 +81,3 @@ header {
 .btn-danger{
     padding: 0.3em;
 }
-
