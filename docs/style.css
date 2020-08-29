@@ -17,24 +17,22 @@ header {
 }
 
 .city-history {
-    float: left;
     background: #f8f9fa;
-    width: 20%;
-    height: 100%;
+    margin: 0;
     padding: .25em .75em 1em .75em;
 }
 
 .city-display {
-    float:left;
-    width: 80%;
     padding: .8em .8em 0em .8em;
 }
 
+.no-padding {
+    padding : 0;
+}
+
 .forecast-holder {
-    float: left;
     padding-top: .8em;
     padding-left: .8em;
-    width: 70%;
 }
 
 .city-forecast {
@@ -46,6 +44,7 @@ header {
 .city-forecast > .city-forecast-day {
     display: inline-block;
     zoom: 1;
+    margin-top: 1%;
     margin-right: 2.5%;
     width: 150px;
     text-align: left;
@@ -60,6 +59,10 @@ header {
 
 .card-body > .forecast-item {
     padding-bottom : 6%;
+}
+
+.forecast-holder > h4 {
+    margin : 0;
 }
 
 .forecast-body {

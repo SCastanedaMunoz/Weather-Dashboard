@@ -19,39 +19,56 @@
   </head>
   <body>
 
-
     <header><strong><h1>Weather Dashboard<h1></strong></header>
 
-    <div class="city-history">
-        <div>
-            <h4>Search for a City:</h4>
+    <div class="container-fluid">
 
-            <div class="search-holder input-group mb-3">
-                <input id="city-input" type="text" class="form-control" placeholder="City's Name" aria-label="City's Name" aria-describedby="button-search">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="button-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <div class="row" >
+
+            <div class="col-2 no-padding">
+
+                <div class="city-history">
+                    <h4>Search for a City:</h4>
+
+                    <div class="search-holder input-group mb-3">
+                        <input id="city-input" type="text" class="form-control" placeholder="City's Name" aria-label="City's Name" aria-describedby="button-search">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="button-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                    <ul class="list-group" id="city-history"></ul>
                 </div>
+
             </div>
 
-            <ul class="list-group" id="city-history"></ul>
-        </div>
-    </div>
+            <div class ="col-10 no-padding">
 
-    <div class="city-display" >
-        <div class="card fluid">
-            <div class="card-body">
-                <h2 id="city-name" class="city-item"></h2>
-                <div id ="city-temp" class="city-item"></div>
-                <div id ="city-humd" class="city-item"></div>
-                <div id ="city-wind" class="city-item"></div>
-                <div id ="city-uvin" class="city-item"></div>
+                <div class="city-display" >
+
+                    <div class="card fluid">
+
+                        <div class="card-body">
+                            <h2 id="city-name" class="city-item"></h2>
+                            <div id ="city-temp" class="city-item"></div>
+                            <div id ="city-humd" class="city-item"></div>
+                            <div id ="city-wind" class="city-item"></div>
+                            <div id ="city-uvin" class="city-item"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="forecast-holder">
+                    <h4>5-Day Forecast:</h4>
+                    <div class="city-forecast"></div>
+                </div>
+
             </div>
-        </div>
-    </div>
 
-    <div class="forecast-holder">
-        <h4>5-Day Forecast:</h4>
-        <div class="city-forecast"></div>
+        </div>
+
     </div>
 
     <!-- Custom Logic -->
